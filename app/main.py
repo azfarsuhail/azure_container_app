@@ -8,5 +8,5 @@ async def root():
     return {"message": "Hello World"}
 
 @app.get("/about")
-async def root():
+async def creator():
     return {"creator": "Azfar Suhail"}
