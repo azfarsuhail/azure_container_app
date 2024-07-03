@@ -39,6 +39,7 @@ jobs:
             --name mycontainerapp \
             --resource-group myresourcegroup \
             --enviroment mycontainerappenv \
+            --login-server ${{ secrets.AZURE_CREDENTIALS }} \
             --port 8000 \
             --image ${{ secrets.AZURE_CREDENTIALS }}/myapp:latest \
             --env-vars 'APP_SETTING=my-setting'
